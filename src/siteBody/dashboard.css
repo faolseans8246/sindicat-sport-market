@@ -1,0 +1,162 @@
+/* Background oynasi bilan ishlash qismi */
+.dashboardContainr {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* To'liq ekran bo'ylab cho'zilgan */
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Video fon kabi to'liq ekran bo'lib turadi */
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Kontent videodan ustun bo'lishi uchun */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Saytning to'la xolati bilan ishlash */
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Saytnining ichki holati bilan ishlash */
+.main-text-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.main-site-part-of-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Links qismi ekran kengligini to'liq egallaydi */
+    max-width: 1200px; /* Maksimal kenglikni o'rnatish */
+}
+
+.messanger-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center; /* Textni markazga joylashtirish */
+    align-items: center; /* Icon va textni vertikal markazlash */
+}
+
+.in-button-part {
+    /*border: 2px solid red;*/
+    background: #ebf1ec;
+    color: #f3740c;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%; /* Button kengligi har doim container kengligini egallaydi */
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box; /* Padding va border kenglikka kiradi */
+
+}
+
+.in-button-part:active {
+    /*border: 2px solid red;*/
+    background: #d5f6f2;
+    padding: 5px;
+
+}
+
+
+.messangers-link-part {
+    flex: 1;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+
+.link-icons,
+.link-text {
+    display: inline;
+    font-size: 25px;
+}
+
+.link-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.messanger-icon {
+    margin-right: 30px;
+
+}
+
+/* Iconlar bilan ishlash */
+.telegram-icon {
+    color: #00b2ff;
+    width: 100%; /* Buttonlar kengligi butun kenglikni egallaydi */
+    max-width: 400px;
+}
+
+.instagram-icon {
+    color: #f305ef;
+}
+
+.facebook-icon {
+    color: #0048ff;
+}
+
+/* text part */
+.sindicate-text-part {
+    display: block;
+    margin-top: -80px;
+    margin-bottom: 110px;
+    font-family: "Arial", Courier, monospace;
+    /*text-transform: uppercase;*/
+}
+
+/* phone numbers part */
+.phone-numbers-part {
+    padding: 10px;
+}
+
+.phone-numbers {
+    margin-top: 40px;
+    background-color: #eaf1ea;
+    border-radius: 5px;
+    padding: 10px;
+    color: #f36805;
+}
+
+
+@media (max-width: 768px) {
+    .main-site-part-of-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .messangers-link-part {
+        width: 70%; /* Har bir link qismi to'liq kenglikni egallaydi */
+        margin: 10px 0;
+    }
+
+    .in-button-part {
+        display: flex;
+        justify-content: center;
+        font-family: "Courier New", Courier, monospace;
+    }
+
+
+}
