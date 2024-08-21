@@ -62,8 +62,8 @@ function DashboardFunc() {
                     {/* Phone numbers */}
                     <div className="phone-numbers-part">
                         <h3 className="phone-numbers">
-                            ☎️ +998339303939
-                            ☎️ +998909303939
+                            ☎️ +(998 33) 930 39 39
+                            ☎️ +(998 90) 930 39 39
                         </h3>
                     </div>
 
